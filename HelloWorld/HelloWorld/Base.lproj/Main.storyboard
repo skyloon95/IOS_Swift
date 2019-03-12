@@ -19,24 +19,63 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello World!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jNk-uk-wBt">
-                                <rect key="frame" x="140.66666666666666" y="395.66666666666669" width="93.666666666666657" height="21"/>
+                                <rect key="frame" x="140.66666666666666" y="94" width="93.666666666666657" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" red="0.047783171301250364" green="0.76277121113989632" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Learn to Code" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jch-Ak-4gE">
-                                <rect key="frame" x="108" y="466.66666666666669" width="159" height="34"/>
+                                <rect key="frame" x="107" y="165" width="159" height="34"/>
                                 <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="27"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
+                                <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="highlightedColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wJz-WI-75u">
+                                <rect key="frame" x="156" y="386" width="63" height="40"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="25"/>
+                                <state key="normal" title="Purple">
+                                    <color key="titleColor" red="0.68926159220000005" green="0.1207423906" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="changeBackToPurple:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Eqp-dY-bwx"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WSJ-eU-vJB">
+                                <rect key="frame" x="273" y="386" width="54" height="40"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="25"/>
+                                <state key="normal" title="Black">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="changeBackToBlack:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lCK-np-tLa"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MDe-p6-70t">
+                                <rect key="frame" x="40" y="386" width="64" height="40"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="25"/>
+                                <state key="normal" title="White">
+                                    <color key="titleColor" red="0.97957387009999997" green="1" blue="0.98702318560000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="changeBackToWhite:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UL2-vg-0Uh"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="Jch-Ak-4gE" firstAttribute="top" secondItem="jNk-uk-wBt" secondAttribute="bottom" constant="50" id="0IK-Mu-zm6"/>
-                            <constraint firstItem="Jch-Ak-4gE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5lq-VT-GyP"/>
-                            <constraint firstItem="jNk-uk-wBt" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="P9k-Kj-pEt"/>
-                            <constraint firstItem="jNk-uk-wBt" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="SCR-i3-pQf"/>
+                            <constraint firstItem="Jch-Ak-4gE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-1" id="5lq-VT-GyP"/>
+                            <constraint firstItem="wJz-WI-75u" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="MDe-p6-70t" secondAttribute="trailing" constant="8" symbolic="YES" id="6jZ-cJ-Lvr"/>
+                            <constraint firstItem="MDe-p6-70t" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="8ju-6g-81p"/>
+                            <constraint firstItem="wJz-WI-75u" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Lbb-Wh-kmf"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="WSJ-eU-vJB" secondAttribute="trailing" constant="48" id="MPh-FG-Dab"/>
+                            <constraint firstItem="WSJ-eU-vJB" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="wJz-WI-75u" secondAttribute="trailing" constant="8" symbolic="YES" id="Mfs-Ks-WfH"/>
+                            <constraint firstItem="MDe-p6-70t" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="NeS-8D-OBi"/>
+                            <constraint firstItem="jNk-uk-wBt" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="PaE-Gn-sZY"/>
+                            <constraint firstItem="wJz-WI-75u" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="awE-vD-jM5"/>
+                            <constraint firstItem="jNk-uk-wBt" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="qp2-tT-PxJ"/>
+                            <constraint firstItem="WSJ-eU-vJB" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="zIC-kO-NAR"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>

@@ -15,6 +15,15 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
     }
 
-
+    @IBAction func changeBackToWhite(_ sender: Any) {
+        view.backgroundColor = UIColor.white
+    }
+    
+    @IBAction func changeBackToPurple(_ sender: Any) {
+        view.backgroundColor = UIColor.purple
+    }
+    
+    @IBAction func changeBackToBlack(_ sender: Any) {
+        view.backgroundColor = UIColor.black
+    }
 }
-

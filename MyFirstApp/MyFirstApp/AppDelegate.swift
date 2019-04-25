@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  HelloWorld
+//  MyFirstApp
 //
-//  Created by 모설아 on 20/04/2019.
+//  Created by 모설아 on 25/04/2019.
 //  Copyright © 2019 Snow. All rights reserved.
 //
 
@@ -16,7 +16,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        sleep(1)
         return true
     }
 

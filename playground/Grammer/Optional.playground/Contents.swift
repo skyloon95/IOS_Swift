@@ -21,3 +21,17 @@ if item == nil{
 } else{
     print("조회 하신 국가의 수도 : \(item!)")
 }
+
+if let item2 = capital["KR"] {
+    print("조회완료. \(item2)")
+} else {
+    print("조회실패")
+}
+
+let num:Int? = Int("233")
+print(num)
+
+if let num1:Int = num!{
+    print("true")
+    print(num1)
+}
